@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>SDD Random Quiz Generator</title>
+  <link rel="stylesheet" href="style2.css" type="text/css"/>
+  <script src="app.js"></script>
+  <script src="jquery.min.js"></script>
+</head>
+<body id="top">
+<div class="columnsContainer">
+    <div class="leftColumn">
+          <div id="test"></div>
+          <div id="testFeedback"></div>
+          <div id="detailedFeedback"></div>
+          <div id="score"></div>
+          <div id="nextQuestion"></div>
+  </div>
+    <div class="rightColumn">
+          <div id="filter">
+            <h3>Filter by topic:</h3>
+            <span onclick ="uncheckAll()" class="selectAllOrNoneLink">Select none</span>
+            <span style="padding-right:0.5em;"> </span>
+            <span onclick ="checkAll()" class="selectAllOrNoneLink"> Select all</span>
+            </br></br>
+                        <label for="issues"><input type='checkbox' name='tags' value='issues' id='issues'/> Social and ethical issues</label></br>
+            <label for="sdas"><input type='checkbox' name='tags' value='sdas' id='sdas'/> Software Dev. Approaches</label></br>
+            <label for="softwaredevcycle"><input type='checkbox' name='tags' value='softwaredevcycle' id='softwaredevcycle'/> Software Development Cycle</label></br>
+            <label for="understandingproblem"><input type='checkbox' name='tags' value='understandingproblem' id='understandingproblem'/> Understanding the problem</label></br>
+            <label for="planningdesigning"><input type='checkbox' name='tags' value='planningdesigning' id='planningdesigning'/> Planning and Designing</label></br>
+            <label for="implementing"><input type='checkbox' name='tags' value='implementing' id='implementing'/> Implementing solutions</label></br>
+            <label for="testevaluate"><input type='checkbox' name='tags' value='testevaluate' id='testevaluate'/> Testing and Evaluating</label></br>
+            <label for="maintaining"><input type='checkbox' name='tags' value='maintaining' id='maintaining'/> Maintaining Software</label></br>
+            <label for="algorithms"><input type='checkbox' name='tags' value='algorithms' id='algorithms'/> Algorithms</label></br>
+            <label for="searchsort"><input type='checkbox' name='tags' value='searchsort' id='searchsort'/> Searching/sorting methods</label></br>
+            <label for="datatypes"><input type='checkbox' name='tags' value='datatypes' id='datatypes'/> Data types</label></br>
+            <label for="datastructures"><input type='checkbox' name='tags' value='datastructures' id='datastructures'/> Data structures</label></br>
+            <label for="controlstructures"><input type='checkbox' name='tags' value='controlstructures' id='controlstructures'/> Control structures</label></br>
+            <label for="modellingtools"><input type='checkbox' name='tags' value='modellingtools' id='modellingtools'/> Modelling tools and flowcharts</label></br>
+            <label for="interfacedesign"><input type='checkbox' name='tags' value='interfacedesign' id='interfacedesign'/> User interface design</label></br>
+            <label for="metalanguages"><input type='checkbox' name='tags' value='metalanguages' id='metalanguages'/> Metalanguages</label></br>
+            <label for="translation"><input type='checkbox' name='tags' value='translation' id='translation'/> Translation to machine code</label></br>
+            <label for="testingcorrecting"><input type='checkbox' name='tags' value='testingcorrecting' id='testingcorrecting'/> Testing and correcting errors</label></br>
+            <label for="documentation"><input type='checkbox' name='tags' value='documentation' id='documentation'/> Documentation</label></br></br>
+            <button onclick='checkFilter()'>Apply filter</button></br>
+              <div class="footer"><p><a class="changeQuizLink" href="https://www.mycourses.xyz/sddwrittenresponse">Switch to written response questions</a></p></div>
+          </div>
+    </div>
+</div>
+</body>
+
+</html>
